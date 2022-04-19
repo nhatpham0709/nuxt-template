@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "login": {
+      "title": "Đăng nhập vào tài khoản của bạn",
+      "description": ""
+    },
+    "signUp": {
+      "title": "Đăng ký tài khoản NP Meet",
+      "description": ""
+    },
+    "password": {
+      "forget": {
+        "title": "Cho chúng tôi biết bạn là ai",
+        "description": ""
+      },
+      "reset": {
+        "title": "Đặt lại mật khẩu",
+        "description": ""
+      },
+      "verify": {
+        "title": "Xác minh quyền sở hữu của bạn",
+        "description": ""
+      }
+    },
+    "index": {
+      "title": "Trang chủ",
+      "description": ""
+    },
+    "server-error": {
+      "title": "Lỗi Server 500",
+      "description": ""
+    },
+    "forbidden": {
+      "title": "Không có quyền truy cập",
+      "description": ""
+    },
+    "unauthorized": {
+      "title": "Đăng nhập trước khi tiếp tục",
+      "description": ""
+    },
+    "profile": {
+      "title": "Hồ sơ",
+      "description": ""
+    },
+    "groups": {
+      "title": "Nhóm",
+      "description": ""
+    },
+    "friends": {
+      "title": "Bạn bè",
+      "description": ""
+    },
+    "chat": {
+      "title": "Trò chuyện",
+      "description": ""
+    },
+    "exercises": {
+      "title": "Bài tập",
+      "description": ""
+    },
+    "calls": {
+      "title": "Cuộc gọi",
+      "description": ""
+    },
+    "help": {
+      "title": "Trợ giúp",
+      "description": ""
+    },
+    "404": {
+      "title": "404 Trang bạn tìm kiếm không tồn tại",
+      "description": ""
+    }
+  },
+  "error": {
+    "403": "Bạn không có quyền truy cập vào tài nguyên này!",
+    "404": "Trang bạn đang tìm không tồn tại!",
+    "500": "Xin lỗi, đã có vấn đề xảy ra với server của chúng tôi. Chúng tôi đang cố gắng khắc phục sự cố sớm nhất có thể.",
+    "goBack": "Quay lại",
+    "toHome": "Về trang chủ"
+  },
+  "home": "Trang chủ",
+  "login": {
+    "text": "Đăng nhập",
+    "welcome": "Chào mừng bạn đến với NP Meet!",
+    "identity": {
+      "placeholder": "Email, tên đăng nhập hoặc mật khẩu",
+      "error": "Hãy nhập thông tin đăng nhập của bạn!!"
+    },
+    "password": {
+      "placeholder": "Mật khẩu",
+      "error": "Hãy nhập mật khẩu của bạn!"
+    },
+    "remember": "Nhớ thông tin",
+    "button": "Đăng nhập",
+    "forgetPassword": "Quên mật khẩu?",
+    "orSignIn": "Hoặc đăng nhập với",
+    "dontHaveAccount": "Chưa có tài khoản?",
+    "signUpNow": "Đăng kí ngay!"
+  },
+  "signUp": {
+    "text": "Đăng kí"
+  }
+}
