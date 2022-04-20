@@ -10,15 +10,11 @@ export default function (
       },
     },
   })
-  const token = app.$cookiz.get("authToken");
-  const lang = app.$cookiz.get("lang");
-
-  if (token) {
-      $axios.setHeader("Authorization", `Bearer ${token}`);
-  }
+  axios.defaults.baseURL = process.env.apiUrl
+  const lang = app.$cookiz.get('lang')
 
   if (lang) {
-      $axios.setHeader("Accept-Language", lang);
+    $axios.setHeader('Accept-Language', lang)
   }
 
   axios.onError((err) => {
@@ -34,17 +30,10 @@ export default function (
       })
     }
   })
-  
+
   const api = {
     register: (payload) => axios.$post(`auth/register`, payload),
-    forgotPassword: (payload) => axios.$post(`auth/password/forgot`, payload),
-    checkResetPasswordToken: (payload) =>
-      axios.$post(`auth/password/token/verify`, payload),
-    newPassword: (payload) => axios.$post(`auth/password/reset`, payload),
-    loginWithSocial: (payload, socialName) =>
-      axios.$post(`auth/social/${socialName}`, payload),
-    confirmEmail: (payload) => axios.$put(`auth/confirm-email`, payload),
-    resendEmail: (payload) => axios.$post(`auth/resend-email-confirm`, payload),
+    testApi: () => axios.$get('auth/profile'),
   }
   inject('api', api)
 }

@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    layout: 'guest',
-    middleware: 'guest',
+  layout: 'guest',
+  middleware: 'guest',
 }
 </script>

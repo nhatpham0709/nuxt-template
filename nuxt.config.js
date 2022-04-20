@@ -32,11 +32,15 @@ export default {
     // '@/plugins/loading',
     '@/plugins/vee-validate',
     '@/plugins/vue-tailwind',
-    '@/plugins/api.js'
+    '@/plugins/api.js',
   ],
 
   components: true,
 
+  env: {
+    apiUrl: process.env.API_URL,
+  },
+  
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
@@ -55,24 +59,38 @@ export default {
   axios: {
     proxy: true,
     baseURL: process.env.API_URL,
-    credentials: true
+    credentials: true,
   },
   proxy: {
     '/laravel': {
       target: 'https://laravel-auth.nuxtjs.app',
-      pathRewrite: { '^/laravel': '/' }
-    }
+      pathRewrite: { '^/laravel': '/' },
+    },
   },
   auth: {
+    resetOnError: true,
+    cookie: {
+      prefix: 'user_auth',
+      options: {
+        path: '/',
+        maxAge: 60 * 60 * 24 * 7,
+      }
+    },
+    redirect: {
+      login: '/login',
+      logout: '/',
+      callback: '/login',
+      home: '/'
+    },  
     strategies: {
       laravelSanctum: {
         url: `${process.env.API_URL}/auth`,
         endpoints: {
           user: {
-            url: 'profile',
-            method: 'get'
-          }
-        }
+            url: '/profile',
+            method: 'get',
+          },
+        },
       },
     },
   },
