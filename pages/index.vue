@@ -11,12 +11,12 @@ export default {
   methods: {
     async logout() {
       await this.$auth.logout()
-      this.$router.push(this.localePath('/login'));
+      this.$router.push(this.localePath('/login'))
     },
     async testApi() {
       const response = await this.$api.testApi()
       console.log(response)
-    }
+    },
   },
 }
 </script>

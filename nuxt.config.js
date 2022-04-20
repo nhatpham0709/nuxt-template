@@ -40,7 +40,7 @@ export default {
   env: {
     apiUrl: process.env.API_URL,
   },
-  
+
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
@@ -57,15 +57,8 @@ export default {
     '@nuxtjs/auth-next',
   ],
   axios: {
-    proxy: true,
     baseURL: process.env.API_URL,
     credentials: true,
-  },
-  proxy: {
-    '/laravel': {
-      target: 'https://laravel-auth.nuxtjs.app',
-      pathRewrite: { '^/laravel': '/' },
-    },
   },
   auth: {
     resetOnError: true,
@@ -74,14 +67,14 @@ export default {
       options: {
         path: '/',
         maxAge: 60 * 60 * 24 * 7,
-      }
+      },
     },
     redirect: {
       login: '/login',
       logout: '/',
       callback: '/login',
-      home: '/'
-    },  
+      home: '/',
+    },
     strategies: {
       laravelSanctum: {
         url: `${process.env.API_URL}/auth`,
