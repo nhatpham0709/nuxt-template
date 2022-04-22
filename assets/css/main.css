@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s ease;
+}
+.page-enter-from,
+.page-leave-to {
+  transform: scale(0.9);
+  opacity: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-background-clip: text;
+}
+.nav-link {
+  @apply text-gray-500 bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none
+}

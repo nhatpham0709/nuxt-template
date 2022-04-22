@@ -22,8 +22,7 @@ export default {
       },
     ],
   },
-
-  css: [],
+  css: ['@/assets/css/main.css'],
   styleResources: {
     scss: ['@/assets/style/scss/variables/*.scss'],
   },
@@ -44,9 +43,9 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/moment',
     '@nuxtjs/style-resources',
+    '@nuxt/postcss8',
   ],
 
   modules: [
@@ -110,6 +109,12 @@ export default {
   },
 
   build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
     plugins: [
       new webpack.ProvidePlugin({
         _: 'lodash',
