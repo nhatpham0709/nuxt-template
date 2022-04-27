@@ -7296,10 +7296,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-lint-staged@^12.1.2:
-  version "12.3.8"
-  resolved "https://registry.npmjs.org/lint-staged/-/lint-staged-12.3.8.tgz"
-  integrity sha512-0+UpNaqIwKRSGAFOCcpuYNIv/j5QGVC+xUVvmSdxHO+IfIGoHbFLo3XcPmV/LLnsVj5EAncNHVtlITSoY5qWGQ==
+lint-staged@^12.4.1:
+  version "12.4.1"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-12.4.1.tgz#63fa27bfc8a33515f6902f63f6670864f1fb233c"
+  integrity sha512-PTXgzpflrQ+pODQTG116QNB+Q6uUTDg5B5HqGvNhoQSGt8Qy+MA/6zSnR8n38+sxP5TapzeQGTvoKni0KRS8Vg==
   dependencies:
     cli-truncate "^3.1.0"
     colorette "^2.0.16"
@@ -9516,16 +9516,7 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2
     picocolors "^0.2.1"
     source-map "^0.6.1"
 
-postcss@^8.1.10, postcss@^8.2.15, postcss@^8.4.0:
-  version "8.4.12"
-  resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.12.tgz"
-  integrity sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==
-  dependencies:
-    nanoid "^3.3.1"
-    picocolors "^1.0.0"
-    source-map-js "^1.0.2"
-
-postcss@^8.4.12:
+postcss@^8.1.10, postcss@^8.2.15, postcss@^8.4.0, postcss@^8.4.12:
   version "8.4.12"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.12.tgz#1e7de78733b28970fa4743f7da6f3763648b1905"
   integrity sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==
